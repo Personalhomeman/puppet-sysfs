@@ -1,6 +1,4 @@
 class sysfs {
-  include concat::setup
-
   package { 'sysfsutils':
     ensure => installed,
   }
