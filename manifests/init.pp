@@ -6,7 +6,7 @@ class sysfs {
   service { 'sysfsutils':
     hasstatus  => false,
     hasrestart => true,
-    subscribe  => File['/etc/sysfs.conf'],
+    subscribe  => Concat['/etc/sysfs.conf'],
   }
 
   concat { '/etc/sysfs.conf':
