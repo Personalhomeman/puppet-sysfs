@@ -13,6 +13,5 @@ class sysfs {
     hasstatus  => false,
     hasrestart => true,
     enable     => true,
-    subscribe  => Concat['/etc/sysfs.conf'],
   }
 }
